@@ -1,9 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'  # Penting untuk flash messages
+app.secret_key = 'your_secret_key_here' 
 
-# Contoh data pengguna (biasanya akan tersimpan di database)
 USERS = {
     'admin': 'password123',
     'user': 'user123'
